@@ -1,6 +1,8 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 
 <style>
 
@@ -117,8 +119,9 @@
             A pretty Magic: the Gathering lookup tool
             </div>
             <div id="search-container">
-            <form method="get" action="#" id="search">
-              <input name="lookup" type="text" size="40" placeholder="Type in a card or set name..." />
+            
+            <form action="api.php" method="POST" id="search">
+              <input name="name" type="text" size="40" placeholder="Type in a card name..." />
             </form>
             </div>
             <div id="content-area" class="content">
