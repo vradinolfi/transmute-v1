@@ -9,47 +9,123 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 	}
+	
+	html {
+		margin: 0;
+		padding: 0;
+	}
 
 	body {
 		font-family: 'Roboto', sans-serif;
+		background: #000 url('bg.jpg') center center no-repeat fixed;
+		background-size: cover;
+		color: #fff;
+		margin: 0;
+		padding: 0;
+	}
+	
+	a {
+		text-decoration: none;
+		color: #10B5EB;
+		border:
+	}
+	
+	a:hover, a:active {
+		color: #eee;
 	}
 	
 	#container {
-		max-width: 900px;
 		width: 100%;
-		margin: 0 auto;
+		margin: 200px auto;
 		padding: 10px;
+		background: rgba(0,0,0,0.4);
+		border-bottom: 1px rgba(255,255,255,0.2);
+		border-top: 1px rgba(255,255,255,0.2);
+	}
+	
+	#main-content {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 20px;
 	}
 	
 	.h1 {
 		font-weight: 900;
-		font-size: 60px;
+		font-size: 80px;
 		padding: 10px;
+		text-shadow: 2px 2px 5px #333;
 	}
 	
 	.h3 {
-		font-weight: 300;
+		font-weight: 900;
 		font-size: 32px;
 		padding: 10px;
+		text-shadow: 2px 2px 5px #333;
 	}
 	
 	.content {	
 		padding: 10px;
 	}
+	
+	#footer {
+		text-align: center;
+		padding: 10px;
+		color: #ccc;
+	}
+	
+	#search input[type="text"] {
+    	background: url(search-white.png) no-repeat 10px 6px #444;
+    	border: 0 none;
+		color: #d7d7d7;
+		width: 50%;
+		padding: 6px 15px 6px 35px;
+		margin:10px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		border-radius: 20px;
+		text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); 
+		-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+		-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+		-webkit-transition: all 0.7s ease 0s;
+		-moz-transition: all 0.7s ease 0s;
+		-o-transition: all 0.7s ease 0s;
+		transition: all 0.7s ease 0s;
+    }
+
+#search input[type="text"]:focus {
+		background: url(search-dark.png) no-repeat 10px 6px #fcfcfc;
+		color: #6a6f75;
+		width: 100%;
+		-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+		-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    }
 
 </style>
 
 </head>
 <body>
 <div id="container">
+<div id="main-content">
 <div id="title" class="h1">
-Transmute.
+Transmu.te
 </div>
 <div id="title-desc" class="h3">
-A pretty MTG lookup tool.
+A pretty Magic: the Gathering lookup tool
+</div>
+<div id="search-container">
+<form method="get" action="#" id="search">
+  <input name="q" type="text" size="40" placeholder="Look up a card..." />
+</form>
 </div>
 <div id="content-area" class="content">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique eros a tellus malesuada, nec tristique turpis semper. Mauris porttitor orci vitae dolor malesuada hendrerit. Aliquam erat volutpat. Mauris luctus posuere odio a lobortis. Donec rutrum ligula fringilla, posuere dui sit amet, vulputate leo. Donec tempor at sem sed sagittis. Duis sollicitudin fermentum libero at ultricies. Phasellus ornare feugiat magna id molestie. Phasellus nisi sapien, vestibulum vitae euismod sed, congue vitae nulla.
+</div>
+<div id="footer">
+Transmu.te was made by <a href="http://vincentadinolfi.com">Vincent Adinolfi</a> utilizing the <a href="https://github.com/stegriff/magic-api">magic-api</a> by <a href="http://stegriff.co.uk/">Stephen Griffiths</a>.
+</div>
 </div>
 </div>
 </body>
