@@ -1,7 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html manifest="scry.appcache">
 <head>
+	<title>Transmu.te</title>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="viewport" content="minimal-ui"/>
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="transmute.css" />
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51277113-1', 'transmute.info');
+  ga('send', 'pageview');
+
+</script>
+    
 </head>
 <body>
-hello world.
+<div id="container">
+    <div id="main-content">
+    	<div class="h1" id="title">Transmu.te</div>
+    
+    	<div class="h3" id="title-desc">A pretty Magic: The Gathering lookup tool</div>
+    	<p><strong>Transmu.te</strong> allows you to view detailed Oracle information on cards, as well as to-the-minute TCGplayer pricing, and competitive decklists utilizing those cards.</p>
+    	<h2 id="status"></h2>
+        <div id="search-container">
+            <form action="api.php" method="POST">
+                    <input id="name" type="text" placeholder="Type in a card name">
+                    <input type="submit" value="Search" >
+                    <ul id="suggestions"></ul>
+                </form>
+        </div>
+    
+                <img id="cardImage">
+    	<div class="content" id="content-area">
+    		
+                <dl id="results"></dl>
+    		
+    	</div>
+    
+        <div id="footer">
+        Transmu.te was made by <a href="http://vincentadinolfi.com">Vincent Adinolfi</a> utilizing the <a href="https://github.com/stegriff/magic-api">magic-api</a> by <a href="http://stegriff.co.uk/">Stephen Griffiths</a>.
+        <br />
+        All rights to <a href="http://www.wizards.com/Magic/Summoner/">Magic: The Gathering</a> belong to <a href="http://wizards.com">Wizards of the Coast</a>.
+        </div>
+	</div>
+</div>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scry.js"></script>
+	<script type="text/javascript" src="js/placeholder.js"></script>
 </body>
 </html>

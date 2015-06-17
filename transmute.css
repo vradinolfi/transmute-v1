@@ -1,0 +1,212 @@
+#cardImage {
+	float: right;
+	max-width: 30%;
+}
+
+dl, ul{
+	margin: 0;
+	padding: 0;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 0.5em;
+	color: #fff;
+}
+
+dd {
+    text-align: justify;
+	padding: 15px 10px;
+	color: #fff;
+}
+
+ul {
+	list-style-type: none;
+	}
+	
+li {
+	display: inline-block;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid rgba(0,0,0,0.3);
+    margin: 4px;
+    padding: 6px;
+border-radius: 16px;
+-webkit-transition: all 0.5s ease 0s;
+-moz-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+
+li:hover {
+    background-color: rgba(16,181,235,0.6);
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+*, *:before, *:after {
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	
+	@media (min-width: 641px){
+		#container {
+			margin: 16% auto 20px auto;
+		}
+		#main-content {
+			max-width: 900px;
+		}
+		
+		#content-area {
+		max-width:70%;
+		}
+		.h1 {
+			font-size: 80px;
+		}
+		.h3 {
+			font-size: 32px;
+		}
+	}
+	
+	@media (max-width: 640px){
+		html, body {
+			width: 100%;
+		}
+		#container {
+			margin: 25px auto 20px auto;
+		}
+		#main-content {
+			max-width: 600px;
+		}
+		.h1 {
+			font-size: 40px;
+		}
+		.h3 {
+			font-size: 18px;
+		}
+	}
+	
+	html {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+		background: #000 url('bg.jpg') no-repeat top fixed;
+		background-size: cover;
+		color: #fff;
+		margin: 0;
+		padding: 0;
+	}
+	
+	a {
+		text-decoration: none;
+		color: #10B5EB;
+		-webkit-transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+		transition: all 0.5s ease 0s;
+		border-bottom: 1px solid rgba(0,0,0,0);
+	}
+	
+	a:hover, a:active {
+		color: #eee;
+		border-color: #fff;
+	}
+	
+	#container {
+		width: 100%;
+		padding: 0;
+		background: rgba(0,0,0,0.4);
+		border-bottom: 1px solid rgba(255,255,255,0.2);
+		border-top: 1px solid rgba(255,255,255,0.2);
+	}
+	
+	#main-content {
+		margin: 0 auto;
+		padding: 10px;
+		
+	}
+	
+	p {
+		padding: 10px;
+	}
+	
+	.h1 {
+		font-weight: 700;
+		padding: 10px;
+		text-shadow: 2px 2px 5px #333;
+	}
+	
+	.h3 {
+		font-weight: 700;
+		padding: 10px;
+		text-shadow: 2px 2px 5px #333;
+	}
+	
+	.content {	
+		padding: 10px;
+	}
+	
+	#footer {
+		text-align: center;
+		padding: 10px;
+		color: #ccc;
+	}
+	
+	#search-container {
+		margin: 0 10px;
+	}
+	
+	#search-container input[type="text"] {
+		background: url(search-dark.png) no-repeat 20px 16px #fcfcfc;
+		color: #6a6f75;
+    	border: 0 none;
+		width: 100%;
+		margin: 10px 0;
+		padding: 16px 25px 16px 45px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+		-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+		-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+		-webkit-transition: all 0.7s ease 0s;
+		-moz-transition: all 0.7s ease 0s;
+		-o-transition: all 0.7s ease 0s;
+		transition: all 0.7s ease 0s;
+    }
+
+	#search-container input[type="text"]:focus {
+    }
+	
+	#search-container input[type="submit"] {
+		color: #6a6f75;
+    	border: 0 none;
+		width: 100%;
+		padding: 16px 25px 16px 25px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		font-weight: bold;
+		font-size: 18px;
+		border-radius: 30px;
+		-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+		-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+		-webkit-transition: all 0.7s ease 0s;
+		-moz-transition: all 0.7s ease 0s;
+		-o-transition: all 0.7s ease 0s;
+		transition: all 0.7s ease 0s;
+    }
+
+/* On smallish widths */
+@media (max-width: 767px){
+	#cardImage{
+		max-width:100%;
+		float: none;
+		display: block;
+		margin: 10px auto;
+	}
+}

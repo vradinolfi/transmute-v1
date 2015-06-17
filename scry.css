@@ -1,0 +1,45 @@
+
+#cardImage {
+	float: right;
+	max-width: 30%;
+}
+
+dl, ul{
+	width: 90%;
+	margin: 1em auto;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 0.5em;
+	color: #222;
+}
+
+dd {
+    text-align: justify;
+	margin-top: 0.1em;
+	padding: 15px 10px;
+	background-color: #777;
+	color: #fff;
+}
+
+ul {
+	list-style-type: none;
+	}
+li {
+	display: inline-block;
+    background-color: #8df;
+    border: 1px solid #6ce;
+    margin: 3px;
+    padding: 4px;
+}
+
+/* On smallish widths */
+@media (max-width: 767px){
+	#cardImage{
+		max-width:40%;
+		float: none;
+		display: block;
+		margin: 1em auto;
+	}
+}
